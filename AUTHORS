@@ -1,0 +1,39 @@
+This file lists all contributors to this repository.
+.TH hsh "hsh - Simple Shell General Commands Manual"
+.SH NAME
+hsh - Simple Shell
+.SH SYNOPSIS
+.B hsh
+.I [OPTIONS] [FILE]
+.B Interactive mode
+.I [command_name][option_name][argument ...]
+.SH DESCRIPTION
+The hsh (Simple Shell) is a program that takes user commands from the keyboard and sends them to the operating system for execution. It offers various features and can execute a wide range of commands. When in interactive mode, the shell typically provides a prompt before each command, processes the given arguments, executes the command, and handles any potential errors. The hsh reads input as lines from a file and tokenizes it into words based on whitespaces.
+.SH EXAMPLES
+$ ./hsh
+hsh> /bin/ls
+README.md exec.c main.h main.c prompt.c
+hsh>
+hsh> exit
+$
+.PP
+$ echo "/bin/ls" | ./hsh
+README.md exec.c main.h main.c prompt.c
+$
+
+.SH AUTHORS
+
+Mostapha BOUDAD     mostapha.boudad.02@gmail.com (Project Leader, Developer)
+MOUNSSIF ESSALHI     @gmail.com (Developer)
+
+Specific Contributions
+
+Mostapha BOUDAD
+Implementation of the command execution function
+Design of the user interface
+Error and exception handling
+
+MOUNSSIF ESSALHI
+Implementation of the command reading function
+Processing of arguments and options
+Handling of signals and child processes
